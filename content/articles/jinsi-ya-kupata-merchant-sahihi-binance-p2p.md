@@ -1,5 +1,5 @@
 ---
-title: Jinsi ya Kupata Merchant Sahihi Binance P2P
+title: "Jinsi ya Kupata Merchant Sahihi Binance na okx P2P "
 category: P2P
 author: mwambino
 date: 2026-09-28T18:18:00.000+03:00

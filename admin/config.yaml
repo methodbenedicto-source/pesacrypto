@@ -1,0 +1,61 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+
+  - name: "articles"
+    label: "Makala"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Bitcoin"
+          - "Binance"
+          - "P2P"
+          - "Trading"
+          - "Wallet & Security"
+          - "Blockchain"
+          - "Crypto Basics"
+
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "PesaCrypto"
+
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Reading Time"
+        name: "reading_time"
+        widget: "string"
+        default: "5 min read"
+
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

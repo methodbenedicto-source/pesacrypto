@@ -1,6 +1,7 @@
 ---
 title: "Jinsi ya Kupata Merchant Sahihi Binance na okx P2P "
 category: P2P
+image: /assets/uploads/cryyyy.jpg
 author: mwambino
 date: 2026-09-28T18:18:00.000+03:00
 reading_time: 5 min read

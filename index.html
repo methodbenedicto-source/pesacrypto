@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="sw">
 <head>
@@ -12,6 +13,9 @@
     >
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -33,7 +37,6 @@
 
     </a>
 
-
     <nav id="mainNav">
 
         <a href="index.html" class="active">
@@ -53,7 +56,6 @@
         </a>
 
     </nav>
-
 
     <div class="nav-actions">
 
@@ -291,7 +293,6 @@
         id="articlesGrid"
     >
 
-
         <!-- ARTICLE 1 -->
 
         <article
@@ -303,13 +304,10 @@
             <a href="article.html">
 
                 <div class="article-image bitcoin-image">
-
                     <span>₿</span>
-
                 </div>
 
             </a>
-
 
             <div class="article-content">
 
@@ -325,19 +323,16 @@
 
                 </div>
 
-
                 <h3>
                     Bitcoin ni Nini?
                     Complete Beginner's Guide
                 </h3>
-
 
                 <p>
                     Bitcoin ni nini, inafanyaje kazi,
                     na kwa nini watu wanaendelea kuzungumzia
                     digital money?
                 </p>
-
 
                 <div class="card-footer">
 
@@ -367,13 +362,10 @@
             <a href="article.html">
 
                 <div class="article-image binance-image">
-
                     <span>◆</span>
-
                 </div>
 
             </a>
-
 
             <div class="article-content">
 
@@ -389,18 +381,15 @@
 
                 </div>
 
-
                 <h3>
                     Binance ni Nini na Inafanyaje Kazi?
                 </h3>
-
 
                 <p>
                     Beginner's guide ya kuelewa Binance,
                     account, crypto trading na basic
                     features zake.
                 </p>
-
 
                 <div class="card-footer">
 
@@ -430,13 +419,10 @@
             <a href="article.html">
 
                 <div class="article-image p2p-image">
-
                     <span>↔</span>
-
                 </div>
 
             </a>
-
 
             <div class="article-content">
 
@@ -452,19 +438,16 @@
 
                 </div>
 
-
                 <h3>
                     Jinsi ya Kutumia Binance P2P
                     kwa Beginner
                 </h3>
-
 
                 <p>
                     Learn how P2P works, jinsi ya kuchagua
                     merchant na basic safety principles
                     wakati wa kufanya transaction.
                 </p>
-
 
                 <div class="card-footer">
 
@@ -494,13 +477,10 @@
             <a href="article.html">
 
                 <div class="article-image security-image">
-
                     <span>🔐</span>
-
                 </div>
 
             </a>
-
 
             <div class="article-content">
 
@@ -516,18 +496,15 @@
 
                 </div>
 
-
                 <h3>
                     Jinsi ya Kulinda Crypto Yako
                 </h3>
-
 
                 <p>
                     Private keys, seed phrase, 2FA na
                     common mistakes ambazo crypto users
                     wanapaswa kuepuka.
                 </p>
-
 
                 <div class="card-footer">
 
@@ -557,13 +534,10 @@
             <a href="article.html">
 
                 <div class="article-image blockchain-image">
-
                     <span>⛓</span>
-
                 </div>
 
             </a>
-
 
             <div class="article-content">
 
@@ -579,19 +553,16 @@
 
                 </div>
 
-
                 <h3>
                     Blockchain ni Nini?
                     Explained in Simple Terms
                 </h3>
-
 
                 <p>
                     Understand the technology behind
                     Bitcoin na kwa nini blockchain inaweza
                     kutumika beyond cryptocurrency.
                 </p>
-
 
                 <div class="card-footer">
 
@@ -621,13 +592,10 @@
             <a href="article.html">
 
                 <div class="article-image wallet-image">
-
                     <span>💰</span>
-
                 </div>
 
             </a>
-
 
             <div class="article-content">
 
@@ -643,19 +611,16 @@
 
                 </div>
 
-
                 <h3>
                     Crypto Wallet ni Nini?
                     Custodial vs Non-Custodial
                 </h3>
-
 
                 <p>
                     Learn the difference between exchange
                     wallets, Trust Wallet, MetaMask na
                     hardware wallets.
                 </p>
-
 
                 <div class="card-footer">
 
@@ -811,7 +776,39 @@
 </footer>
 
 
+<!-- ================= SCRIPTS ================= -->
+
 <script src="script.js"></script>
+
+<script>
+    /*
+     * Netlify Identity
+     *
+     * This allows password-reset links such as:
+     * #/recovery?token=...
+     *
+     * to be handled by the Netlify Identity widget.
+     */
+
+    if (window.netlifyIdentity) {
+
+        netlifyIdentity.on("init", function(user) {
+
+            /*
+             * If the URL contains a recovery token,
+             * the Identity widget will handle the
+             * password-reset screen automatically.
+             */
+
+            if (window.location.hash.includes("/recovery")) {
+                netlifyIdentity.open();
+            }
+
+        });
+
+    }
+</script>
 
 </body>
 </html>
+```

@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="sw">
 
@@ -17,7 +18,10 @@
         content="Crypto education kwa Kiswahili. Learn Bitcoin, Binance, P2P, trading, wallets na blockchain."
     >
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
     <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -32,7 +36,10 @@
 
 <header class="navbar">
 
-    <a href="index.html" class="brand">
+    <a
+        href="index.html"
+        class="brand"
+    >
 
         <div class="brand-logo">
             P
@@ -40,7 +47,9 @@
 
         <div>
 
-            <strong>PesaCrypto</strong>
+            <strong>
+                PesaCrypto
+            </strong>
 
             <span>
                 CRYPTO EDUCATION
@@ -53,7 +62,10 @@
 
     <nav id="mainNav">
 
-        <a href="index.html" class="active">
+        <a
+            href="index.html"
+            class="active"
+        >
             Home
         </a>
 
@@ -82,6 +94,7 @@
             🔍
         </button>
 
+
         <button
             class="icon-btn"
             onclick="toggleTheme()"
@@ -89,6 +102,7 @@
         >
             ☼
         </button>
+
 
         <button
             class="menu-btn"
@@ -103,10 +117,12 @@
 </header>
 
 
-
 <!-- ================= SEARCH ================= -->
 
-<div id="searchBox" class="search-box">
+<div
+    id="searchBox"
+    class="search-box"
+>
 
     <input
         type="text"
@@ -118,12 +134,12 @@
 </div>
 
 
-
 <!-- ================= HERO ================= -->
 
 <section class="hero">
 
     <div class="hero-inner">
+
 
         <div class="hero-copy">
 
@@ -131,17 +147,28 @@
                 CRYPTO EDUCATION • KISWAHILI
             </span>
 
+
             <h1>
+
                 Learn Crypto.
+
                 <br>
-                <span>Understand Money.</span>
+
+                <span>
+                    Understand Money.
+                </span>
+
             </h1>
 
+
             <p>
+
                 Makala rahisi na practical kuhusu Bitcoin,
                 Binance, P2P, trading, wallets, blockchain
                 na digital assets — kwa Kiswahili mixed English.
+
             </p>
+
 
             <div class="hero-buttons">
 
@@ -151,6 +178,7 @@
                 >
                     Soma Makala →
                 </a>
+
 
                 <a
                     href="#categories"
@@ -178,26 +206,29 @@
                 </span>
 
                 <span>
-                    5 MIN READ
+                    Loading...
                 </span>
 
             </div>
+
 
             <div class="hero-symbol">
                 ₿
             </div>
 
+
             <h3>
-                Karibu PesaCrypto
+                Loading latest article...
             </h3>
 
+
             <p>
-                Jifunze kuhusu crypto kwa Kiswahili
-                kwa njia rahisi na practical.
+                Makala mpya kutoka PesaCrypto.
             </p>
 
+
             <a href="#articles">
-                Read articles →
+                Read article →
             </a>
 
         </div>
@@ -205,7 +236,6 @@
     </div>
 
 </section>
-
 
 
 <!-- ================= CATEGORIES ================= -->
@@ -234,12 +264,15 @@
 
     <div class="category-grid">
 
+
         <button
             onclick="filterArticles('all')"
             class="category-item"
         >
 
-            <span>✦</span>
+            <span>
+                ✦
+            </span>
 
             <strong>
                 All Articles
@@ -257,7 +290,9 @@
             class="category-item"
         >
 
-            <span>₿</span>
+            <span>
+                ₿
+            </span>
 
             <strong>
                 Bitcoin
@@ -275,7 +310,9 @@
             class="category-item"
         >
 
-            <span>◆</span>
+            <span>
+                ◆
+            </span>
 
             <strong>
                 Binance
@@ -293,7 +330,9 @@
             class="category-item"
         >
 
-            <span>↔</span>
+            <span>
+                ↔
+            </span>
 
             <strong>
                 P2P
@@ -311,7 +350,9 @@
             class="category-item"
         >
 
-            <span>↗</span>
+            <span>
+                ↗
+            </span>
 
             <strong>
                 Trading
@@ -325,14 +366,16 @@
 
 
         <button
-            onclick="filterArticles('security')"
+            onclick="filterArticles('wallet-security')"
             class="category-item"
         >
 
-            <span>⌾</span>
+            <span>
+                🔐
+            </span>
 
             <strong>
-                Security
+                Wallet & Security
             </strong>
 
             <small>
@@ -347,7 +390,9 @@
             class="category-item"
         >
 
-            <span>⛓</span>
+            <span>
+                ⛓
+            </span>
 
             <strong>
                 Blockchain
@@ -361,11 +406,13 @@
 
 
         <button
-            onclick="filterArticles('crypto basics')"
+            onclick="filterArticles('crypto-basics')"
             class="category-item"
         >
 
-            <span>₿</span>
+            <span>
+                ₿
+            </span>
 
             <strong>
                 Crypto Basics
@@ -380,7 +427,6 @@
     </div>
 
 </section>
-
 
 
 <!-- ================= ARTICLES ================= -->
@@ -404,17 +450,18 @@
 
         </div>
 
+
         <span
             class="article-count"
             id="articleCount"
         >
-            0 Articles
+            Loading...
         </span>
 
     </div>
 
 
-    <!-- ARTICLES WILL LOAD HERE -->
+    <!-- ARTICLES LOADED AUTOMATICALLY -->
 
     <div
         class="articles-grid"
@@ -427,13 +474,12 @@
     <div
         id="noResults"
         class="no-results"
-        style="display:none;"
+        style="display: none;"
     >
         Hakuna makala iliyopatikana.
     </div>
 
 </section>
-
 
 
 <!-- ================= ABOUT ================= -->
@@ -449,27 +495,33 @@
             ABOUT THE BLOG
         </span>
 
+
         <h2>
             Crypto explained
             in a language you understand.
         </h2>
 
+
         <p>
+
             PesaCrypto ni platform ya crypto education
             inayolenga kufanya complicated crypto concepts
             ziwe simple, practical na easy to understand.
+
         </p>
 
+
         <p>
+
             Kuanzia Bitcoin na blockchain mpaka Binance,
             P2P, wallets na security — tunavunja kila topic
             step-by-step kwa Kiswahili mixed English.
+
         </p>
 
     </div>
 
 </section>
-
 
 
 <!-- ================= NEWSLETTER ================= -->
@@ -482,9 +534,11 @@
             STAY UPDATED
         </span>
 
+
         <h2>
             Pata makala mpya.
         </h2>
+
 
         <p>
             No spam. Just useful crypto education.
@@ -493,7 +547,9 @@
     </div>
 
 
-    <form onsubmit="subscribe(event)">
+    <form
+        onsubmit="subscribe(event)"
+    >
 
         <input
             type="email"
@@ -502,6 +558,7 @@
             required
         >
 
+
         <button type="submit">
             Subscribe
         </button>
@@ -509,7 +566,6 @@
     </form>
 
 </section>
-
 
 
 <!-- ================= FOOTER ================= -->
@@ -521,6 +577,7 @@
         <div class="brand-logo">
             P
         </div>
+
 
         <div>
 
@@ -543,13 +600,16 @@
             Home
         </a>
 
+
         <a href="#articles">
             Makala
         </a>
 
+
         <a href="#categories">
             Categories
         </a>
+
 
         <a href="#about">
             About
@@ -565,596 +625,12 @@
 </footer>
 
 
-
-<!-- ================= SCRIPTS ================= -->
+<!-- ================= SCRIPT ================= -->
 
 <script src="script.js"></script>
 
 
-<script>
-
-/* =========================================
-   LOAD ARTICLES FROM articles.json
-========================================= */
-
-let allArticles = [];
-
-
-async function loadArticles() {
-
-    const grid =
-        document.getElementById("articlesGrid");
-
-    const count =
-        document.getElementById("articleCount");
-
-    try {
-
-        const response =
-            await fetch("articles.json");
-
-        if (!response.ok) {
-            throw new Error("articles.json not found");
-        }
-
-        allArticles =
-            await response.json();
-
-        /*
-         * Newest first
-         */
-
-        allArticles.sort(
-            (a, b) =>
-                new Date(b.date) -
-                new Date(a.date)
-        );
-
-
-        renderArticles(allArticles);
-
-
-        /*
-         * Update article count
-         */
-
-        count.textContent =
-            `${allArticles.length} Articles`;
-
-
-        /*
-         * Featured article
-         */
-
-        loadFeaturedArticle(allArticles[0]);
-
-
-    } catch (error) {
-
-        console.error(
-            "Failed to load articles:",
-            error
-        );
-
-        grid.innerHTML = `
-            <div class="no-results">
-                Makala bado hazija-load.
-                Tafadhali refresh page.
-            </div>
-        `;
-
-    }
-
-}
-
-
-
-/* =========================================
-   RENDER ARTICLES
-========================================= */
-
-function renderArticles(articles) {
-
-    const grid =
-        document.getElementById("articlesGrid");
-
-    const noResults =
-        document.getElementById("noResults");
-
-
-    grid.innerHTML = "";
-
-
-    if (!articles.length) {
-
-        noResults.style.display =
-            "block";
-
-        return;
-
-    }
-
-
-    noResults.style.display =
-        "none";
-
-
-    articles.forEach(article => {
-
-        const category =
-            String(
-                article.category || "Crypto Basics"
-            ).toLowerCase();
-
-
-        const title =
-            article.title || "Untitled Article";
-
-
-        const excerpt =
-            article.excerpt || "";
-
-
-        const author =
-            article.author || "PesaCrypto";
-
-
-        const readingTime =
-            article.readingTime ||
-            article.reading_time ||
-            "5 min read";
-
-
-        const date =
-            formatArticleDate(
-                article.date
-            );
-
-
-        const slug =
-            article.slug || "";
-
-
-        const image =
-            article.image || "";
-
-
-        const categoryClass =
-            getCategoryClass(category);
-
-
-        const icon =
-            getCategoryIcon(category);
-
-
-        const imageHTML =
-            image
-
-            ? `
-                <div class="article-image">
-                    <img
-                        src="${escapeHTML(image)}"
-                        alt="${escapeHTML(title)}"
-                    >
-                </div>
-              `
-
-            : `
-                <div
-                    class="article-image ${categoryClass}-image"
-                >
-                    <span>
-                        ${icon}
-                    </span>
-                </div>
-              `;
-
-
-        const card = document.createElement(
-            "article"
-        );
-
-
-        card.className =
-            "article-card";
-
-
-        card.dataset.category =
-            category;
-
-
-        card.dataset.title =
-            `${title} ${excerpt}`.toLowerCase();
-
-
-        card.innerHTML = `
-
-            <a
-                href="articles/${encodeURIComponent(slug)}/"
-            >
-
-                ${imageHTML}
-
-            </a>
-
-
-            <div class="article-content">
-
-                <div class="article-meta">
-
-                    <span class="tag">
-                        ${escapeHTML(
-                            String(article.category || "CRYPTO BASICS").toUpperCase()
-                        )}
-                    </span>
-
-                    <span>
-                        ${escapeHTML(readingTime)}
-                    </span>
-
-                </div>
-
-
-                <h3>
-
-                    ${escapeHTML(title)}
-
-                </h3>
-
-
-                <p>
-
-                    ${escapeHTML(excerpt)}
-
-                </p>
-
-
-                <div class="card-footer">
-
-                    <span>
-                        ${escapeHTML(author)}
-                    </span>
-
-                    <span>
-                        ${date}
-                    </span>
-
-                </div>
-
-            </div>
-
-        `;
-
-
-        grid.appendChild(card);
-
-    });
-
-}
-
-
-
-/* =========================================
-   FILTER ARTICLES
-========================================= */
-
-function filterArticles(category) {
-
-    if (category === "all") {
-
-        renderArticles(allArticles);
-
-        return;
-
-    }
-
-
-    const selected =
-        String(category)
-            .toLowerCase();
-
-
-    const filtered =
-        allArticles.filter(article => {
-
-            const articleCategory =
-                String(
-                    article.category || ""
-                )
-                .toLowerCase();
-
-
-            return (
-                articleCategory === selected
-            );
-
-        });
-
-
-    renderArticles(filtered);
-
-}
-
-
-
-/* =========================================
-   SEARCH ARTICLES
-========================================= */
-
-function searchArticles() {
-
-    const input =
-        document.getElementById(
-            "searchInput"
-        );
-
-
-    const query =
-        input.value
-            .toLowerCase()
-            .trim();
-
-
-    if (!query) {
-
-        renderArticles(allArticles);
-
-        return;
-
-    }
-
-
-    const results =
-        allArticles.filter(article => {
-
-            const text = `
-
-                ${article.title || ""}
-
-                ${article.excerpt || ""}
-
-                ${article.category || ""}
-
-            `.toLowerCase();
-
-
-            return text.includes(query);
-
-        });
-
-
-    renderArticles(results);
-
-}
-
-
-
-/* =========================================
-   FEATURED ARTICLE
-========================================= */
-
-function loadFeaturedArticle(article) {
-
-    if (!article) return;
-
-
-    const featured =
-        document.getElementById(
-            "featuredArticle"
-        );
-
-
-    const title =
-        article.title ||
-        "Latest Crypto Article";
-
-
-    const excerpt =
-        article.excerpt ||
-        "Soma makala mpya ya PesaCrypto.";
-
-
-    const readingTime =
-        article.readingTime ||
-        article.reading_time ||
-        "5 min read";
-
-
-    const slug =
-        article.slug || "";
-
-
-    const icon =
-        getCategoryIcon(
-            String(
-                article.category || ""
-            ).toLowerCase()
-        );
-
-
-    featured.innerHTML = `
-
-        <div class="hero-card-top">
-
-            <span>
-                FEATURED
-            </span>
-
-            <span>
-                ${escapeHTML(readingTime.toUpperCase())}
-            </span>
-
-        </div>
-
-
-        <div class="hero-symbol">
-            ${icon}
-        </div>
-
-
-        <h3>
-            ${escapeHTML(title)}
-        </h3>
-
-
-        <p>
-            ${escapeHTML(excerpt)}
-        </p>
-
-
-        <a href="articles/${encodeURIComponent(slug)}/">
-            Read article →
-        </a>
-
-    `;
-
-}
-
-
-
-/* =========================================
-   CATEGORY ICONS
-========================================= */
-
-function getCategoryIcon(category) {
-
-    if (category.includes("bitcoin")) {
-        return "₿";
-    }
-
-    if (category.includes("binance")) {
-        return "◆";
-    }
-
-    if (category.includes("p2p")) {
-        return "↔";
-    }
-
-    if (category.includes("trading")) {
-        return "↗";
-    }
-
-    if (
-        category.includes("security") ||
-        category.includes("wallet")
-    ) {
-        return "🔐";
-    }
-
-    if (category.includes("blockchain")) {
-        return "⛓";
-    }
-
-    return "✦";
-
-}
-
-
-
-/* =========================================
-   CATEGORY CSS CLASS
-========================================= */
-
-function getCategoryClass(category) {
-
-    if (category.includes("bitcoin")) {
-        return "bitcoin";
-    }
-
-    if (category.includes("binance")) {
-        return "binance";
-    }
-
-    if (category.includes("p2p")) {
-        return "p2p";
-    }
-
-    if (category.includes("security")) {
-        return "security";
-    }
-
-    if (category.includes("blockchain")) {
-        return "blockchain";
-    }
-
-    if (category.includes("trading")) {
-        return "trading";
-    }
-
-    return "wallet";
-
-}
-
-
-
-/* =========================================
-   DATE FORMAT
-========================================= */
-
-function formatArticleDate(date) {
-
-    if (!date) {
-        return "";
-    }
-
-
-    const parsed =
-        new Date(date);
-
-
-    if (isNaN(parsed.getTime())) {
-        return date;
-    }
-
-
-    return parsed.toLocaleDateString(
-        "en-US",
-        {
-            month: "short",
-            day: "numeric",
-            year: "numeric"
-        }
-    );
-
-}
-
-
-
-/* =========================================
-   HTML ESCAPE
-========================================= */
-
-function escapeHTML(value) {
-
-    return String(value)
-
-        .replace(/&/g, "&amp;")
-
-        .replace(/</g, "&lt;")
-
-        .replace(/>/g, "&gt;")
-
-        .replace(/"/g, "&quot;")
-
-        .replace(/'/g, "&#039;");
-
-}
-
-
-
-/* =========================================
-   LOAD
-========================================= */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    loadArticles
-);
-
-</script>
-
-
-<!-- Netlify Identity -->
+<!-- ================= NETLIFY IDENTITY ================= -->
 
 <script>
 
@@ -1165,8 +641,7 @@ if (window.netlifyIdentity) {
         function(user) {
 
             if (
-                window.location.hash
-                    .includes("/recovery")
+                window.location.hash.includes("/recovery")
             ) {
 
                 netlifyIdentity.open();
@@ -1184,3 +659,4 @@ if (window.netlifyIdentity) {
 </body>
 
 </html>
+```

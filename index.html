@@ -1,673 +1,622 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
+\<html lang="sw">
 
-<html lang="sw">
+\<head>
 
-<head>
+    \<meta charset="UTF-8">
 
-```
-<meta charset="UTF-8">
+    \<meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    \>
 
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
+    \<title>PesaCrypto — Crypto Education\</title>
 
-<title>PesaCrypto — Crypto Education</title>
+    \<meta
+        name="description"
+        content="Crypto education kwa Kiswahili. Learn Bitcoin, Binance, P2P, trading, wallets na blockchain."
+    \>
 
-<meta
-    name="description"
-    content="Crypto education kwa Kiswahili. Learn Bitcoin, Binance, P2P, trading, wallets na blockchain."
->
+    \<link rel="stylesheet" href="style.css">
 
-<link
-    rel="stylesheet"
-    href="style.css"
->
+    \<!-- Netlify Identity -->
+    \<script src="[https://identity.netlify.com/v1/netlify-identity-widget.js](https://identity.netlify.com/v1/netlify-identity-widget.js)">\</script>
 
-<!-- Netlify Identity -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-```
+\</head>
 
-</head>
 
-<body>
 
-<!-- ================= NAVBAR ================= -->
+\<body>
 
-<header class="navbar">
 
-```
-<a
-    href="index.html"
-    class="brand"
->
 
-    <div class="brand-logo">
-        P
-    </div>
+\<!-- ================= NAVBAR ================= -->
 
-    <div>
+\<header class="navbar">
 
-        <strong>
-            PesaCrypto
-        </strong>
+    \<a href="index.html" class="brand">
 
-        <span>
-            CRYPTO EDUCATION
-        </span>
+        \<div class="brand-logo">
+            P
+        \</div>
 
-    </div>
+        \<div>
 
-</a>
+            \<strong>PesaCrypto\</strong>
 
+            \<span>
+                CRYPTO EDUCATION
+            \</span>
 
-<nav id="mainNav">
+        \</div>
 
-    <a
-        href="index.html"
-        class="active"
-    >
-        Home
-    </a>
+    \</a>
 
-    <a href="#articles">
-        Makala
-    </a>
 
-    <a href="#categories">
-        Categories
-    </a>
 
-    <a href="#about">
-        About
-    </a>
+    \<nav id="mainNav">
 
-</nav>
+        \<a href="index.html" class="active">
+            Home
+        \</a>
 
+        \<a href="#articles">
+            Makala
+        \</a>
 
-<div class="nav-actions">
+        \<a href="#categories">
+            Categories
+        \</a>
 
-    <button
-        class="icon-btn"
-        onclick="toggleSearch()"
-        aria-label="Search"
-    >
-        🔍
-    </button>
+        \<a href="#about">
+            About
+        \</a>
 
-    <button
-        class="icon-btn"
-        onclick="toggleTheme()"
-        aria-label="Toggle theme"
-    >
-        ☼
-    </button>
+    \</nav>
 
-    <button
-        class="menu-btn"
-        onclick="toggleMenu()"
-        aria-label="Menu"
-    >
-        ☰
-    </button>
 
-</div>
-```
 
-</header>
+    \<div class="nav-actions">
 
-<!-- ================= SEARCH ================= -->
+        \<button
+            class="icon-btn"
+            onclick="toggleSearch()"
+            aria-label="Search"
+        \>
+            🔍
+        \</button>
 
-<div
-    id="searchBox"
-    class="search-box"
->
+        \<button
+            class="icon-btn"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+        \>
+            ☼
+        \</button>
 
-```
-<input
-    type="text"
-    id="searchInput"
-    placeholder="Search articles..."
-    autocomplete="off"
->
-```
+        \<button
+            class="menu-btn"
+            onclick="toggleMenu()"
+            aria-label="Menu"
+        \>
+            ☰
+        \</button>
 
-</div>
+    \</div>
 
-<!-- ================= HERO ================= -->
+\</header>
 
-<section class="hero">
 
-```
-<div class="hero-inner">
 
 
-    <div class="hero-copy">
 
-        <span class="eyebrow">
-            CRYPTO EDUCATION • KISWAHILI
-        </span>
+\<!-- ================= SEARCH ================= -->
 
+\<div id="searchBox" class="search-box">
 
-        <h1>
+    \<input
+        type="text"
+        id="searchInput"
+        placeholder="Search articles..."
+        onkeyup="searchArticles()"
+    \>
 
-            Learn Crypto.
+\</div>
 
-            <br>
 
-            <span>
-                Understand Money.
-            </span>
 
-        </h1>
 
 
-        <p>
+\<!-- ================= HERO ================= -->
 
-            Makala rahisi na practical kuhusu Bitcoin,
-            Binance, P2P, trading, wallets, blockchain
-            na digital assets — kwa Kiswahili mixed English.
+\<section class="hero">
 
-        </p>
+    \<div class="hero-inner">
 
+        \<div class="hero-copy">
 
-        <div class="hero-buttons">
+            \<span class="eyebrow">
+                CRYPTO EDUCATION • KISWAHILI
+            \</span>
 
-            <a
-                href="#articles"
-                class="primary-btn"
-            >
-                Soma Makala →
-            </a>
+            \<h1>
+                Learn Crypto.
+                \<br>
+                \<span>Understand Money.\</span>
+            \</h1>
 
+            \<p>
+                Makala rahisi na practical kuhusu Bitcoin,
+                Binance, P2P, trading, wallets, blockchain
+                na digital assets — kwa Kiswahili mixed English.
+            \</p>
 
-            <a
-                href="#categories"
-                class="secondary-btn"
-            >
-                Explore Topics
-            </a>
+            \<div class="hero-buttons">
 
-        </div>
+                \<a
+                    href="#articles"
+                    class="primary-btn"
+                \>
+                    Soma Makala →
+                \</a>
 
-    </div>
+                \<a
+                    href="#categories"
+                    class="secondary-btn"
+                \>
+                    Explore Topics
+                \</a>
 
+            \</div>
 
-    <!-- FEATURED ARTICLE -->
+        \</div>
 
-    <div
-        class="hero-card"
-        id="featuredArticle"
-    >
 
-        <div class="hero-card-top">
 
-            <span>
-                FEATURED
-            </span>
+        \<!-- FEATURED ARTICLE -->
 
-            <span>
-                Loading...
-            </span>
+        \<div
+            class="hero-card"
+            id="featuredArticle"
+        \>
 
-        </div>
+            \<div class="hero-card-top">
 
+                \<span>
+                    FEATURED
+                \</span>
 
-        <div class="hero-symbol">
-            ₿
-        </div>
+                \<span>
+                    5 MIN READ
+                \</span>
 
+            \</div>
 
-        <h3>
-            Loading latest article...
-        </h3>
+            \<div class="hero-symbol">
+                ₿
+            \</div>
 
+            \<h3>
+                Karibu PesaCrypto
+            \</h3>
 
-        <p>
-            Makala mpya kutoka PesaCrypto.
-        </p>
+            \<p>
+                Jifunze kuhusu crypto kwa Kiswahili
+                kwa njia rahisi na practical.
+            \</p>
 
+            \<a href="#articles">
+                Read articles →
+            \</a>
 
-        <a href="#articles">
-            Read article →
-        </a>
+        \</div>
 
-    </div>
+    \</div>
 
-</div>
-```
+\</section>
 
-</section>
 
-<!-- ================= CATEGORIES ================= -->
 
-<section
+
+
+\<!-- ================= CATEGORIES ================= -->
+
+\<section
     class="categories container"
     id="categories"
->
+\>
 
-```
-<div class="section-heading">
+    \<div class="section-heading">
 
-    <div>
+        \<div>
 
-        <span class="eyebrow">
-            EXPLORE
-        </span>
+            \<span class="eyebrow">
+                EXPLORE
+            \</span>
 
-        <h2>
-            Learn by Category
-        </h2>
+            \<h2>
+                Learn by Category
+            \</h2>
 
-    </div>
+        \</div>
 
-</div>
-
-
-<div class="category-grid">
+    \</div>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('all')"
-        class="category-item"
-    >
 
-        <span>
-            ✦
-        </span>
+    \<div class="category-grid">
 
-        <strong>
-            All Articles
-        </strong>
+        \<button
+            onclick="filterArticles('all')"
+            class="category-item"
+        \>
 
-        <small>
-            Everything
-        </small>
+            \<span>✦\</span>
 
-    </button>
+            \<strong>
+                All Articles
+            \</strong>
 
+            \<small>
+                Everything
+            \</small>
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('bitcoin')"
-        class="category-item"
-    >
-
-        <span>
-            ₿
-        </span>
-
-        <strong>
-            Bitcoin
-        </strong>
-
-        <small>
-            BTC & fundamentals
-        </small>
-
-    </button>
+        \</button>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('binance')"
-        class="category-item"
-    >
 
-        <span>
-            ◆
-        </span>
+        \<button
+            onclick="filterArticles('bitcoin')"
+            class="category-item"
+        \>
 
-        <strong>
-            Binance
-        </strong>
+            \<span>₿\</span>
 
-        <small>
-            Exchange & tutorials
-        </small>
+            \<strong>
+                Bitcoin
+            \</strong>
 
-    </button>
+            \<small>
+                BTC & fundamentals
+            \</small>
+
+        \</button>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('p2p')"
-        class="category-item"
-    >
 
-        <span>
-            ↔
-        </span>
+        \<button
+            onclick="filterArticles('binance')"
+            class="category-item"
+        \>
 
-        <strong>
-            P2P
-        </strong>
+            \<span>◆\</span>
 
-        <small>
-            Buy & sell crypto
-        </small>
+            \<strong>
+                Binance
+            \</strong>
 
-    </button>
+            \<small>
+                Exchange & tutorials
+            \</small>
+
+        \</button>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('trading')"
-        class="category-item"
-    >
 
-        <span>
-            ↗
-        </span>
+        \<button
+            onclick="filterArticles('p2p')"
+            class="category-item"
+        \>
 
-        <strong>
-            Trading
-        </strong>
+            \<span>↔\</span>
 
-        <small>
-            Trading basics
-        </small>
+            \<strong>
+                P2P
+            \</strong>
 
-    </button>
+            \<small>
+                Buy & sell crypto
+            \</small>
+
+        \</button>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('wallet-security')"
-        class="category-item"
-    >
 
-        <span>
-            🔐
-        </span>
+        \<button
+            onclick="filterArticles('trading')"
+            class="category-item"
+        \>
 
-        <strong>
-            Wallet & Security
-        </strong>
+            \<span>↗\</span>
 
-        <small>
-            Protect your crypto
-        </small>
+            \<strong>
+                Trading
+            \</strong>
 
-    </button>
+            \<small>
+                Trading basics
+            \</small>
+
+        \</button>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('blockchain')"
-        class="category-item"
-    >
 
-        <span>
-            ⛓
-        </span>
+        \<button
+            onclick="filterArticles('security')"
+            class="category-item"
+        \>
 
-        <strong>
-            Blockchain
-        </strong>
+            \<span>⌾\</span>
 
-        <small>
-            Technology
-        </small>
+            \<strong>
+                Security
+            \</strong>
 
-    </button>
+            \<small>
+                Protect your crypto
+            \</small>
+
+        \</button>
 
 
-    <button
-        type="button"
-        onclick="pesacryptoFilterArticles('crypto-basics')"
-        class="category-item"
-    >
 
-        <span>
-            ₿
-        </span>
+        \<button
+            onclick="filterArticles('blockchain')"
+            class="category-item"
+        \>
 
-        <strong>
-            Crypto Basics
-        </strong>
+            \<span>⛓\</span>
 
-        <small>
-            Beginner guides
-        </small>
+            \<strong>
+                Blockchain
+            \</strong>
 
-    </button>
+            \<small>
+                Technology
+            \</small>
 
-</div>
-```
+        \</button>
 
-</section>
 
-<!-- ================= ARTICLES ================= -->
 
-<section
+        \<button
+            onclick="filterArticles('crypto basics')"
+            class="category-item"
+        \>
+
+            \<span>₿\</span>
+
+            \<strong>
+                Crypto Basics
+            \</strong>
+
+            \<small>
+                Beginner guides
+            \</small>
+
+        \</button>
+
+    \</div>
+
+\</section>
+
+
+
+
+
+\<!-- ================= ARTICLES ================= -->
+
+\<section
     class="articles-section container"
     id="articles"
->
+\>
 
-```
-<div class="section-heading">
+    \<div class="section-heading">
 
-    <div>
+        \<div>
 
-        <span class="eyebrow">
-            LATEST ARTICLES
-        </span>
+            \<span class="eyebrow">
+                LATEST ARTICLES
+            \</span>
 
-        <h2>
-            Makala Mpya
-        </h2>
+            \<h2>
+                Makala Mpya
+            \</h2>
 
-    </div>
+        \</div>
 
+        \<span
+            class="article-count"
+            id="articleCount"
+        \>
+            0 Articles
+        \</span>
 
-    <span
-        class="article-count"
-        id="articleCount"
-    >
-        Loading...
-    </span>
-
-</div>
+    \</div>
 
 
-<div
-    class="articles-grid"
-    id="articlesGrid"
->
 
-    <div class="no-results">
-        Loading articles...
-    </div>
+    \<!-- ARTICLES WILL LOAD HERE -->
 
-</div>
+    \<div
+        class="articles-grid"
+        id="articlesGrid"
+    \>
+
+    \</div>
 
 
-<div
-    id="noResults"
-    class="no-results"
-    style="display:none;"
->
-    Hakuna makala iliyopatikana.
-</div>
-```
 
-</section>
+    \<div
+        id="noResults"
+        class="no-results"
+        style="display\:none;"
+    \>
+        Hakuna makala iliyopatikana.
+    \</div>
 
-<!-- ================= ABOUT ================= -->
+\</section>
 
-<section
+
+
+
+
+\<!-- ================= ABOUT ================= -->
+
+\<section
     class="about container"
     id="about"
->
+\>
 
-```
-<div class="about-box">
+    \<div class="about-box">
 
-    <span class="eyebrow">
-        ABOUT THE BLOG
-    </span>
+        \<span class="eyebrow">
+            ABOUT THE BLOG
+        \</span>
 
+        \<h2>
+            Crypto explained
+            in a language you understand.
+        \</h2>
 
-    <h2>
-        Crypto explained
-        in a language you understand.
-    </h2>
+        \<p>
+            PesaCrypto ni platform ya crypto education
+            inayolenga kufanya complicated crypto concepts
+            ziwe simple, practical na easy to understand.
+        \</p>
 
+        \<p>
+            Kuanzia Bitcoin na blockchain mpaka Binance,
+            P2P, wallets na security — tunavunja kila topic
+            step-by-step kwa Kiswahili mixed English.
+        \</p>
 
-    <p>
+    \</div>
 
-        PesaCrypto ni platform ya crypto education
-        inayolenga kufanya complicated crypto concepts
-        ziwe simple, practical na easy to understand.
-
-    </p>
-
-
-    <p>
-
-        Kuanzia Bitcoin na blockchain mpaka Binance,
-        P2P, wallets na security — tunavunja kila topic
-        step-by-step kwa Kiswahili mixed English.
-
-    </p>
-
-</div>
-```
-
-</section>
-
-<!-- ================= NEWSLETTER ================= -->
-
-<section class="newsletter">
-
-```
-<div>
-
-    <span class="eyebrow">
-        STAY UPDATED
-    </span>
+\</section>
 
 
-    <h2>
-        Pata makala mpya.
-    </h2>
 
 
-    <p>
-        No spam. Just useful crypto education.
-    </p>
 
-</div>
+\<!-- ================= NEWSLETTER ================= -->
 
+\<section class="newsletter">
 
-<form
-    onsubmit="subscribe(event)"
->
+    \<div>
 
-    <input
-        type="email"
-        id="email"
-        placeholder="Email yako"
-        required
-    >
+        \<span class="eyebrow">
+            STAY UPDATED
+        \</span>
 
-    <button type="submit">
-        Subscribe
-    </button>
+        \<h2>
+            Pata makala mpya.
+        \</h2>
 
-</form>
-```
+        \<p>
+            No spam. Just useful crypto education.
+        \</p>
 
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-```
-<div class="footer-brand">
-
-    <div class="brand-logo">
-        P
-    </div>
+    \</div>
 
 
-    <div>
 
-        <strong>
-            PesaCrypto
-        </strong>
+    \<form onsubmit="subscribe(event)">
 
-        <span>
-            CRYPTO EDUCATION
-        </span>
+        \<input
+            type="email"
+            id="email"
+            placeholder="Email yako"
+            required
+        \>
 
-    </div>
+        \<button type="submit">
+            Subscribe
+        \</button>
 
-</div>
+    \</form>
 
-
-<div class="footer-links">
-
-    <a href="index.html">
-        Home
-    </a>
-
-    <a href="#articles">
-        Makala
-    </a>
-
-    <a href="#categories">
-        Categories
-    </a>
-
-    <a href="#about">
-        About
-    </a>
-
-</div>
+\</section>
 
 
-<p>
-    © 2026 PesaCrypto. All rights reserved.
-</p>
-```
-
-</footer>
-
-<!-- ================= MAIN SCRIPT ================= -->
-
-<script src="script.js"></script>
-
-<!-- ================= DYNAMIC ARTICLES ================= -->
-
-<script>
-
-let pesacryptoArticles = [];
 
 
-/* =========================================
-   NORMALIZE CATEGORY
-========================================= */
 
-function pesacryptoNormalizeCategory(category) {
+\<!-- ================= FOOTER ================= -->
 
-    return String(category || "")
-        .trim()
-        .toLowerCase()
-        .replace(/&/g, "and")
-        .replace(/[\s_]+/g, "-");
+\<footer>
 
-}
+    \<div class="footer-brand">
+
+        \<div class="brand-logo">
+            P
+        \</div>
+
+        \<div>
+
+            \<strong>
+                PesaCrypto
+            \</strong>
+
+            \<span>
+                CRYPTO EDUCATION
+            \</span>
+
+        \</div>
+
+    \</div>
 
 
-/* =========================================
-   LOAD ARTICLES
-========================================= */
 
-async function pesacryptoLoadArticles() {
+    \<div class="footer-links">
+
+        \<a href="index.html">
+            Home
+        \</a>
+
+        \<a href="#articles">
+            Makala
+        \</a>
+
+        \<a href="#categories">
+            Categories
+        \</a>
+
+        \<a href="#about">
+            About
+        \</a>
+
+    \</div>
+
+
+
+    \<p>
+        © 2026 PesaCrypto. All rights reserved.
+    \</p>
+
+\</footer>
+
+
+
+
+
+\<!-- ================= SCRIPTS ================= -->
+
+\<script src="script.js">\</script>
+
+
+
+\<script>
+
+/\* =========================================
+   LOAD ARTICLES FROM articles.json
+\========================================= \*/
+
+let allArticles = [];
+
+
+
+async function loadArticles() {
 
     const grid =
         document.getElementById("articlesGrid");
@@ -677,127 +626,87 @@ async function pesacryptoLoadArticles() {
 
     try {
 
-        /*
-         * Cache busting:
-         * Helps browser detect newly published articles.
-         */
-
-        const response = await fetch(
-            "articles.json?v=" + Date.now(),
-            {
-                cache: "no-store"
-            }
-        );
-
+        const response =
+            await fetch("articles.json");
 
         if (!response.ok) {
-
-            throw new Error(
-                "articles.json HTTP " + response.status
-            );
-
+            throw new Error("articles.json not found");
         }
 
-
-        pesacryptoArticles =
+        allArticles =
             await response.json();
 
+        /\*
+         \* Newest first
+         \*/
 
-        if (!Array.isArray(pesacryptoArticles)) {
-
-            throw new Error(
-                "articles.json is not an array"
-            );
-
-        }
-
-
-        /*
-         * Newest article first
-         */
-
-        pesacryptoArticles.sort(
+        allArticles.sort(
             (a, b) =>
-                new Date(b.date || 0) -
-                new Date(a.date || 0)
+                new Date(b.date) -
+                new Date(a.date)
         );
 
+
+
+        renderArticles(allArticles);
+
+
+
+        /\*
+         \* Update article count
+         \*/
 
         count.textContent =
-            pesacryptoArticles.length +
-            (
-                pesacryptoArticles.length === 1
-                    ? " Article"
-                    : " Articles"
-            );
+            \`${allArticles.length} Articles\`;
 
 
-        pesacryptoRenderArticles(
-            pesacryptoArticles
-        );
 
+        /\*
+         \* Featured article
+         \*/
 
-        /*
-         * Latest article becomes featured
-         */
+        loadFeaturedArticle(allArticles[0]);
 
-        pesacryptoLoadFeatured(
-            pesacryptoArticles[0]
-        );
 
 
     } catch (error) {
 
         console.error(
-            "PesaCrypto article loading error:",
+            "Failed to load articles:",
             error
         );
 
-
-        count.textContent =
-            "0 Articles";
-
-
-        grid.innerHTML = `
-
-            <div class="no-results">
-
-                Imeshindikana kupakia makala.
-
-                <br><br>
-
+        grid.innerHTML = \`
+            \<div class="no-results">
+                Makala bado hazija-load.
                 Tafadhali refresh page.
-
-            </div>
-
-        `;
+            \</div>
+        \`;
 
     }
 
 }
 
 
-/* =========================================
-   RENDER ARTICLES
-========================================= */
 
-function pesacryptoRenderArticles(
-    articles
-) {
+
+
+/\* =========================================
+   RENDER ARTICLES
+\========================================= \*/
+
+function renderArticles(articles) {
 
     const grid =
-        document.getElementById(
-            "articlesGrid"
-        );
-
+        document.getElementById("articlesGrid");
 
     const noResults =
-        document.getElementById(
-            "noResults"
-        );
+        document.getElementById("noResults");
+
 
 
     grid.innerHTML = "";
+
 
 
     if (!articles.length) {
@@ -810,39 +719,34 @@ function pesacryptoRenderArticles(
     }
 
 
+
     noResults.style.display =
         "none";
 
 
+
     articles.forEach(article => {
-
-
-        const title =
-            article.title ||
-            "Untitled Article";
-
-
-        const excerpt =
-            article.excerpt ||
-            "";
-
-
-        const author =
-            article.author ||
-            "PesaCrypto";
-
 
         const category =
             String(
-                article.category ||
-                "Crypto Basics"
-            );
+                article.category || "Crypto Basics"
+            ).toLowerCase();
 
 
-        const normalizedCategory =
-            pesacryptoNormalizeCategory(
-                category
-            );
+
+        const title =
+            article.title || "Untitled Article";
+
+
+
+        const excerpt =
+            article.excerpt || "";
+
+
+
+        const author =
+            article.author || "PesaCrypto";
+
 
 
         const readingTime =
@@ -851,162 +755,141 @@ function pesacryptoRenderArticles(
             "5 min read";
 
 
+
         const date =
-            pesacryptoFormatDate(
+            formatArticleDate(
                 article.date
             );
 
 
+
         const slug =
-            article.slug ||
-            "";
+            article.slug || "";
+
 
 
         const image =
-            article.image ||
-            "";
+            article.image || "";
+
+
+
+        const categoryClass =
+            getCategoryClass(category);
+
 
 
         const icon =
-            pesacryptoCategoryIcon(
-                normalizedCategory
-            );
+            getCategoryIcon(category);
 
 
-        let imageHTML;
 
+        const imageHTML =
+            image
 
-        if (image) {
+            ? \`
+                \<div class="article-image">
+                    \<img
+                        src="${escapeHTML(image)}"
+                        alt="${escapeHTML(title)}"
+                    \>
+                \</div>
+              \`
 
-            imageHTML = `
-
-                <div class="article-image">
-
-                    <img
-                        src="${pesacryptoEscapeHTML(image)}"
-                        alt="${pesacryptoEscapeHTML(title)}"
-                        loading="lazy"
-                    >
-
-                </div>
-
-            `;
-
-        } else {
-
-            imageHTML = `
-
-                <div
-                    class="article-image ${pesacryptoCategoryClass(normalizedCategory)}-image"
-                >
-
-                    <span>
+            : \`
+                \<div
+                    class="article-image ${categoryClass}-image"
+                \>
+                    \<span>
                         ${icon}
-                    </span>
-
-                </div>
-
-            `;
-
-        }
+                    \</span>
+                \</div>
+              \`;
 
 
-        const card =
-            document.createElement(
-                "article"
-            );
+
+        const card = document.createElement(
+            "article"
+        );
+
 
 
         card.className =
             "article-card";
 
 
+
         card.dataset.category =
-            normalizedCategory;
+            category;
 
 
-        card.dataset.title = (
-            title +
-            " " +
-            excerpt +
-            " " +
-            category
-        ).toLowerCase();
+
+        card.dataset.title =
+            \`${title} ${excerpt}\`.toLowerCase();
 
 
-        card.innerHTML = `
 
-            <a
-                href="articles/${pesacryptoSafeSlug(slug)}/"
-                aria-label="${pesacryptoEscapeHTML(title)}"
-            >
+        card.innerHTML = \`
+
+            \<a
+                href="articles/${encodeURIComponent(slug)}/"
+            \>
 
                 ${imageHTML}
 
-            </a>
+            \</a>
 
 
-            <div class="article-content">
 
+            \<div class="article-content">
 
-                <div class="article-meta">
+                \<div class="article-meta">
 
-                    <span class="tag">
-
-                        ${pesacryptoEscapeHTML(
-                            category.toUpperCase()
+                    \<span class="tag">
+                        ${escapeHTML(
+                            String(article.category || "CRYPTO BASICS").toUpperCase()
                         )}
+                    \</span>
 
-                    </span>
+                    \<span>
+                        ${escapeHTML(readingTime)}
+                    \</span>
 
-
-                    <span>
-
-                        ${pesacryptoEscapeHTML(
-                            readingTime
-                        )}
-
-                    </span>
-
-                </div>
+                \</div>
 
 
-                <h3>
 
-                    ${pesacryptoEscapeHTML(title)}
+                \<h3>
 
-                </h3>
+                    ${escapeHTML(title)}
 
-
-                <p>
-
-                    ${pesacryptoEscapeHTML(excerpt)}
-
-                </p>
+                \</h3>
 
 
-                <div class="card-footer">
 
-                    <span>
+                \<p>
 
-                        ${pesacryptoEscapeHTML(
-                            author
-                        )}
+                    ${escapeHTML(excerpt)}
 
-                    </span>
+                \</p>
 
 
-                    <span>
 
+                \<div class="card-footer">
+
+                    \<span>
+                        ${escapeHTML(author)}
+                    \</span>
+
+                    \<span>
                         ${date}
+                    \</span>
 
-                    </span>
+                \</div>
 
-                </div>
+            \</div>
 
-            </div>
+        \`;
 
-        `;
 
 
         grid.appendChild(card);
@@ -1016,147 +899,125 @@ function pesacryptoRenderArticles(
 }
 
 
-/* =========================================
+
+
+
+/\* =========================================
    FILTER ARTICLES
-========================================= */
+\========================================= \*/
 
-function pesacryptoFilterArticles(
-    category
-) {
+function filterArticles(category) {
 
-    if (
-        category === "all"
-    ) {
+    if (category === "all") {
 
-        pesacryptoRenderArticles(
-            pesacryptoArticles
-        );
+        renderArticles(allArticles);
 
         return;
 
     }
 
 
+
     const selected =
-        pesacryptoNormalizeCategory(
-            category
-        );
+        String(category)
+            .toLowerCase();
+
 
 
     const filtered =
-        pesacryptoArticles.filter(
-            article => {
+        allArticles.filter(article => {
 
-                const articleCategory =
-                    pesacryptoNormalizeCategory(
-                        article.category
-                    );
+            const articleCategory =
+                String(
+                    article.category || ""
+                )
+                .toLowerCase();
 
 
-                return (
-                    articleCategory ===
-                    selected
-                );
 
-            }
+            return (
+                articleCategory === selected
+            );
+
+        });
+
+
+
+    renderArticles(filtered);
+
+}
+
+
+
+
+
+/\* =========================================
+   SEARCH ARTICLES
+\========================================= \*/
+
+function searchArticles() {
+
+    const input =
+        document.getElementById(
+            "searchInput"
         );
 
 
-    pesacryptoRenderArticles(
-        filtered
-    );
+
+    const query =
+        input.value
+            .toLowerCase()
+            .trim();
 
 
-    /*
-     * Scroll back to articles
-     */
 
-    document
-        .getElementById("articles")
-        .scrollIntoView({
-            behavior: "smooth"
+    if (!query) {
+
+        renderArticles(allArticles);
+
+        return;
+
+    }
+
+
+
+    const results =
+        allArticles.filter(article => {
+
+            const text = \`
+
+                ${article.title || ""}
+
+                ${article.excerpt || ""}
+
+                ${article.category || ""}
+
+            \`.toLowerCase();
+
+
+
+            return text.includes(query);
+
         });
 
-}
 
 
-/* =========================================
-   SEARCH
-========================================= */
-
-const pesacryptoSearchInput =
-    document.getElementById(
-        "searchInput"
-    );
-
-
-if (pesacryptoSearchInput) {
-
-    pesacryptoSearchInput.addEventListener(
-        "input",
-        function () {
-
-            const query =
-                this.value
-                    .toLowerCase()
-                    .trim();
-
-
-            if (!query) {
-
-                pesacryptoRenderArticles(
-                    pesacryptoArticles
-                );
-
-                return;
-
-            }
-
-
-            const results =
-                pesacryptoArticles.filter(
-                    article => {
-
-                        const text = `
-
-                            ${article.title || ""}
-
-                            ${article.excerpt || ""}
-
-                            ${article.category || ""}
-
-                            ${article.author || ""}
-
-                        `.toLowerCase();
-
-
-                        return text.includes(
-                            query
-                        );
-
-                    }
-                );
-
-
-            pesacryptoRenderArticles(
-                results
-            );
-
-        }
-    );
+    renderArticles(results);
 
 }
 
 
-/* =========================================
+
+
+
+/\* =========================================
    FEATURED ARTICLE
-========================================= */
+\========================================= \*/
 
-function pesacryptoLoadFeatured(
-    article
-) {
+function loadFeaturedArticle(article) {
 
     if (!article) return;
+
 
 
     const featured =
@@ -1165,14 +1026,17 @@ function pesacryptoLoadFeatured(
         );
 
 
+
     const title =
         article.title ||
         "Latest Crypto Article";
 
 
+
     const excerpt =
         article.excerpt ||
         "Soma makala mpya ya PesaCrypto.";
+
 
 
     const readingTime =
@@ -1181,85 +1045,249 @@ function pesacryptoLoadFeatured(
         "5 min read";
 
 
+
     const slug =
-        article.slug ||
-        "";
+        article.slug || "";
 
-
-    const category =
-        pesacryptoNormalizeCategory(
-            article.category
-        );
 
 
     const icon =
-        pesacryptoCategoryIcon(
-            category
+        getCategoryIcon(
+            String(
+                article.category || ""
+            ).toLowerCase()
         );
 
 
-    featured.innerHTML = `
 
-        <div class="hero-card-top">
+    featured.innerHTML = \`
 
-            <span>
+        \<div class="hero-card-top">
+
+            \<span>
                 FEATURED
-            </span>
+            \</span>
 
-            <span>
-                ${pesacryptoEscapeHTML(
-                    readingTime.toUpperCase()
-                )}
-            </span>
+            \<span>
+                ${escapeHTML(readingTime.toUpperCase())}
+            \</span>
 
-        </div>
+        \</div>
 
 
-        <div class="hero-symbol">
 
+        \<div class="hero-symbol">
             ${icon}
-
-        </div>
-
-
-        <h3>
-
-            ${pesacryptoEscapeHTML(
-                title
-            )}
-
-        </h3>
+        \</div>
 
 
-        <p>
 
-            ${pesacryptoEscapeHTML(
-                excerpt
-            )}
-
-        </p>
+        \<h3>
+            ${escapeHTML(title)}
+        \</h3>
 
 
-        <a
-            href="articles/${pesacryptoSafeSlug(slug)}/"
-        >
 
+        \<p>
+            ${escapeHTML(excerpt)}
+        \</p>
+
+
+
+        \<a href="articles/${encodeURIComponent(slug)}/">
             Read article →
+        \</a>
 
-        </a>
-
-    `;
+    \`;
 
 }
 
 
-/* =========================================
-   CATEGORY ICON
-========================================= */
 
-function pesacryptoCategoryIcon(
-    category
-) {
+
+
+/\* =========================================
+   CATEGORY ICONS
+\========================================= \*/
+
+function getCategoryIcon(category) {
+
+    if (category.includes("bitcoin")) {
+        return "₿";
+    }
+
+    if (category.includes("binance")) {
+        return "◆";
+    }
+
+    if (category.includes("p2p")) {
+        return "↔";
+    }
+
+    if (category.includes("trading")) {
+        return "↗";
+    }
 
     if (
-        category
+        category.includes("security") ||
+        category.includes("wallet")
+    ) {
+        return "🔐";
+    }
+
+    if (category.includes("blockchain")) {
+        return "⛓";
+    }
+
+    return "✦";
+
+}
+
+
+
+
+
+/\* =========================================
+   CATEGORY CSS CLASS
+\========================================= \*/
+
+function getCategoryClass(category) {
+
+    if (category.includes("bitcoin")) {
+        return "bitcoin";
+    }
+
+    if (category.includes("binance")) {
+        return "binance";
+    }
+
+    if (category.includes("p2p")) {
+        return "p2p";
+    }
+
+    if (category.includes("security")) {
+        return "security";
+    }
+
+    if (category.includes("blockchain")) {
+        return "blockchain";
+    }
+
+    if (category.includes("trading")) {
+        return "trading";
+    }
+
+    return "wallet";
+
+}
+
+
+
+
+
+/\* =========================================
+   DATE FORMAT
+\========================================= \*/
+
+function formatArticleDate(date) {
+
+    if (!date) {
+        return "";
+    }
+
+
+
+    const parsed =
+        new Date(date);
+
+
+
+    if (isNaN(parsed.getTime())) {
+        return date;
+    }
+
+
+
+    return parsed.toLocaleDateString(
+        "en-US",
+        {
+            month: "short",
+            day: "numeric",
+            year: "numeric"
+        }
+    );
+
+}
+
+
+
+
+
+/\* =========================================
+   HTML ESCAPE
+\========================================= \*/
+
+function escapeHTML(value) {
+
+    return String(value)
+
+        .replace(/&/g, "&amp;")
+
+        .replace(/\</g, "&lt;")
+
+        .replace(/>/g, "&gt;")
+
+        .replace(/"/g, "&quot;")
+
+        .replace(/'/g, "&#039;");
+
+}
+
+
+
+
+
+/\* =========================================
+   LOAD
+\========================================= \*/
+
+document.addEventListener(
+    "DOMContentLoaded",
+    loadArticles
+);
+
+\</script>
+
+
+
+\<!-- Netlify Identity -->
+
+\<script>
+
+if (window\.netlifyIdentity) {
+
+    netlifyIdentity.on(
+        "init",
+        function(user) {
+
+            if (
+                window\.location.hash
+                    .includes("/recovery")
+            ) {
+
+                netlifyIdentity.open();
+
+            }
+
+        }
+    );
+
+}
+
+\</script>
+
+
+
+\</body>
+
+\</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.logo span {
+    color: #f59e0b;
+}
+
+.search-box input {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #fff;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.content-section {
+    margin-top: 2rem;
+}
+
+.content-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+    border-left: 4px solid #f59e0b;
+    padding-left: 0.5rem;
+}
+
+.articles-grid, .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 1.2rem;
+    border: 1px solid #334155;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.card .tag {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    margin-top: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e293b;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .search-box input {
+        width: 100%;
+    }
+}
